@@ -1,6 +1,6 @@
 "use strict";
 
-let namber = 4;
+/* let namber = 4;
 const persone = "Alex";
 
 const bool = false;
@@ -27,3 +27,24 @@ decr--;
 
 console.log(incr);
 console.log(decr);
+ */
+
+const namberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+  count: namberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
+
+const a = prompt("Один из последних просмотренных фильмов?", ""),
+  b = +prompt("На сколько очените его?", ""),
+  c = prompt("Один из последних просмотренных фильмов?", ""),
+  d = +prompt("На сколько очените его?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
